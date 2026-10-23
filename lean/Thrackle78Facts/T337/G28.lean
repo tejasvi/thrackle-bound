@@ -1,0 +1,86 @@
+import Thrackle78Facts.T337.B1120
+import Thrackle78Facts.T337.B1121
+import Thrackle78Facts.T337.B1122
+import Thrackle78Facts.T337.B1123
+import Thrackle78Facts.T337.B1124
+import Thrackle78Facts.T337.B1125
+import Thrackle78Facts.T337.B1126
+import Thrackle78Facts.T337.B1127
+import Thrackle78Facts.T337.B1128
+import Thrackle78Facts.T337.B1129
+import Thrackle78Facts.T337.B1130
+import Thrackle78Facts.T337.B1131
+import Thrackle78Facts.T337.B1132
+import Thrackle78Facts.T337.B1133
+import Thrackle78Facts.T337.B1134
+import Thrackle78Facts.T337.B1135
+import Thrackle78Facts.T337.B1136
+import Thrackle78Facts.T337.B1137
+import Thrackle78Facts.T337.B1138
+import Thrackle78Facts.T337.B1139
+import Thrackle78Facts.T337.B1140
+import Thrackle78Facts.T337.B1141
+import Thrackle78Facts.T337.B1142
+import Thrackle78Facts.T337.B1143
+import Thrackle78Facts.T337.B1144
+import Thrackle78Facts.T337.B1145
+import Thrackle78Facts.T337.B1146
+import Thrackle78Facts.T337.B1147
+import Thrackle78Facts.T337.B1148
+import Thrackle78Facts.T337.B1149
+import Thrackle78Facts.T337.B1150
+import Thrackle78Facts.T337.B1151
+import Thrackle78Facts.T337.B1152
+import Thrackle78Facts.T337.B1153
+import Thrackle78Facts.T337.B1154
+import Thrackle78Facts.T337.B1155
+import Thrackle78Facts.T337.B1156
+import Thrackle78Facts.T337.B1157
+import Thrackle78Facts.T337.B1158
+import Thrackle78Facts.T337.B1159
+
+open Thrackle78 Thrackle78Core
+
+theorem T78Native.T337.group_ok_28 : ∀ j < 40, checkBFromListRX 12 lTH337.toArray T78Native.T337.fsX (T78Native.T337.orcF lTH337.toArray) (T78Native.T337.famOrcF lTH337.toArray) (T78Native.T337.adaptF lTH337.toArray) (T78Native.T337.batch (40 * 28 + j)) = true := by
+  intro j hj
+  interval_cases j
+  exacts [T78Native.T337.batch_ok_1120,
+      T78Native.T337.batch_ok_1121,
+      T78Native.T337.batch_ok_1122,
+      T78Native.T337.batch_ok_1123,
+      T78Native.T337.batch_ok_1124,
+      T78Native.T337.batch_ok_1125,
+      T78Native.T337.batch_ok_1126,
+      T78Native.T337.batch_ok_1127,
+      T78Native.T337.batch_ok_1128,
+      T78Native.T337.batch_ok_1129,
+      T78Native.T337.batch_ok_1130,
+      T78Native.T337.batch_ok_1131,
+      T78Native.T337.batch_ok_1132,
+      T78Native.T337.batch_ok_1133,
+      T78Native.T337.batch_ok_1134,
+      T78Native.T337.batch_ok_1135,
+      T78Native.T337.batch_ok_1136,
+      T78Native.T337.batch_ok_1137,
+      T78Native.T337.batch_ok_1138,
+      T78Native.T337.batch_ok_1139,
+      T78Native.T337.batch_ok_1140,
+      T78Native.T337.batch_ok_1141,
+      T78Native.T337.batch_ok_1142,
+      T78Native.T337.batch_ok_1143,
+      T78Native.T337.batch_ok_1144,
+      T78Native.T337.batch_ok_1145,
+      T78Native.T337.batch_ok_1146,
+      T78Native.T337.batch_ok_1147,
+      T78Native.T337.batch_ok_1148,
+      T78Native.T337.batch_ok_1149,
+      T78Native.T337.batch_ok_1150,
+      T78Native.T337.batch_ok_1151,
+      T78Native.T337.batch_ok_1152,
+      T78Native.T337.batch_ok_1153,
+      T78Native.T337.batch_ok_1154,
+      T78Native.T337.batch_ok_1155,
+      T78Native.T337.batch_ok_1156,
+      T78Native.T337.batch_ok_1157,
+      T78Native.T337.batch_ok_1158,
+      T78Native.T337.batch_ok_1159]

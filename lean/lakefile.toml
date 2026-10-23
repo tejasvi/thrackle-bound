@@ -1,0 +1,137 @@
+name = "Thrackle"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["Thrackle78"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+autoImplicit = false
+weak.linter.style.header = false
+
+# Toolchain leanprover/lean4:v4.35.0-rc3; Mathlib at tag v4.35.0-rc3 (see lake-manifest.json).
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0-rc3"
+
+# The statements and the proofs.
+[[lean_lib]]
+name = "Thrackle78"
+globs = ["Thrackle78.+"]
+
+# The certificate checker, the data loader, the certificate data and the computational facts.
+
+[[lean_lib]]
+name = "Thrackle78Core"
+globs = ["Thrackle78Core", "Thrackle78Core.+"]
+precompileModules = true
+
+# Build-time loader of certificate data (7-bit string chunks with FNV-1a pins).
+[[lean_lib]]
+name = "T78Loader"
+precompileModules = true
+
+# Certificate data, compiled to native code.
+[[lean_lib]]
+name = "T78Data"
+globs = ["T78Data", "T78Data.+"]
+precompileModules = true
+moreLeancArgs = ["-mcmodel=medium"]
+
+# Inputs of the native run N682 (lDB682), compiled to native code (one lib per run).
+[[lean_lib]]
+name = "T78N682"
+precompileModules = true
+
+# Inputs of the native run N660 (lDB660), compiled to native code (one lib per run).
+[[lean_lib]]
+name = "T78N660"
+precompileModules = true
+
+# The computational facts (native_decide).
+[[lean_lib]]
+name = "Thrackle78Facts"
+globs = ["Thrackle78Facts.+"]
+
+# The symmetry-reduced search.
+
+# The top tree with skipped nodes and the canonical-restriction test (core Lean only; a separate lib so that the
+# core lib and the facts built on it stay unchanged).
+[[lean_lib]]
+name = "T78Sym"
+precompileModules = true
+
+# The native run for DB(6,8,-1).
+
+# The bitset walk with family hints (core Lean only; its own lib).
+[[lean_lib]]
+name = "T78Fam"
+precompileModules = true
+
+# The family oracle for oracle v3 (famOrc/adapt; core Lean only; its own lib).
+[[lean_lib]]
+name = "T78BM3Fam"
+precompileModules = true
+
+# Indexed filters (core Lean only; its own lib).
+[[lean_lib]]
+name = "T78FX"
+precompileModules = true
+
+# Oracle v3 (core Lean only; its own lib, namespace Thrackle78Core.BM3, so that v2 in the core lib and the
+# facts built on it stay unchanged).
+[[lean_lib]]
+name = "T78BM3"
+precompileModules = true
+
+# Inputs of the native run N681 (lDB681), compiled to native code (one lib per run; the top-tree inputs in
+# their own lib, so that the batches do not build them).
+[[lean_lib]]
+name = "T78N681"
+precompileModules = true
+
+[[lean_lib]]
+name = "T78N681T"
+precompileModules = true
+
+# Inputs of the native run N681 (lDB681), indexed filters (one lib per data module).
+[[lean_lib]]
+name = "T78N681Dh12"
+precompileModules = true
+
+[[lean_lib]]
+name = "T78N681Dh54"
+precompileModules = true
+
+# The twenty computational facts assembled, and the three bounds with them discharged.
+[[lean_lib]]
+name = "Thrackle78Full"
+
+# The native run for theta(3,3,7).
+
+# The filter tree of an indexed filter with family hints (core Lean only; its own lib).
+[[lean_lib]]
+name = "T78FXF"
+precompileModules = true
+
+# Inputs of the native run T337 (lTH337): data, batch, top-tree and filter-tree inputs.
+[[lean_lib]]
+name = "T78T337D"
+precompileModules = true
+
+[[lean_lib]]
+name = "T78T337"
+precompileModules = true
+
+[[lean_lib]]
+name = "T78T337T"
+precompileModules = true
+
+[[lean_lib]]
+name = "T78T337H"
+precompileModules = true
+
+# The theta facts and the 4/3 bound with all computational facts discharged.
+[[lean_lib]]
+name = "Thrackle78Full43"
