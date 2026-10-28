@@ -1,15 +1,15 @@
 # Computations for "A thrackle on n vertices has fewer than 4n/3 edges"
 
 This repository contains the programs, input graphs, filter lists, split states and logs of the computations in the
-paper, and the Lean project of its Section 6. The paper is archived at doi:10.5281/zenodo.23574202; this repository
-is archived at doi:10.5281/zenodo.23574203.
+paper, the Lean project of its Section 6 and the LaTeX source of the paper (`paper/main.tex`). The paper is archived at
+doi:10.5281/zenodo.23716510; this repository is archived at doi:10.5281/zenodo.23716511.
 
 ## What is computed
 
 | paper | statement | files |
 |---|---|---|
-| Theorem 1.2, Theorem 3.1 | DB(6,8,-1) is not thrackleable | `logs/db681_full/`, `logs/RESULTS_DB681.txt` |
-| Theorem 1.2, Theorem 3.5 | DB(6,10,-3) is not thrackleable | `logs/db6103/` |
+| Theorem 1.2 | DB(6,8,-1) is not thrackleable | `logs/db681_full/`, `logs/RESULTS_DB681.txt` |
+| Theorem 1.2 | DB(6,10,-3) is not thrackleable | `logs/db6103/` |
 | Theorem 3.1 | DB(6,8,-2) and DB(6,8,-3) are not thrackleable | `logs/db682/`; `logs/union_results.txt` (line `r_udb_6`) |
 | Lemma 3.2 | unions of a 6-cycle and an 8-cycle with a common edge: 343 classes; the 14 that need a search are not thrackleable | `src/unions.py`, `logs/unions_C6C8.log`, `logs/union_results.txt` |
 | Lemma 3.4 | unions of two distinct 6-cycles with a common vertex (84 classes) or edge (58 classes) | `src/unions66.py`, `logs/calib/unions66_*.log`, `logs/calib/union66_results.log`, `logs/calib/dumbbells.log`, `logs/calib/db660.log` |
@@ -340,4 +340,4 @@ planarity tests, 83,401,645,992, as the run in `logs/db6103/`.
 
 ## License
 
-Apache License 2.0 (`LICENSE`; the same text is in `independent/LICENSE`).
+Apache License 2.0 (`LICENSE`; the same text is in `independent/LICENSE`). The LaTeX source of the paper is under CC BY 4.0.

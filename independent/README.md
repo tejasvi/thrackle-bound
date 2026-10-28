@@ -5,7 +5,7 @@ This directory contains:
   filter lists with millions of systems and is otherwise identical;
 - separate implementations of the enumerations behind Lemmas 3.2, 3.4 and 4.3 and of the discharging arithmetic of
   Section 4, for c = 15/11, 27/20, 51/38 and 4/3;
-- the outputs of their runs, including the three dumbbells of Theorem 3.5, DB(5,5,-2), DB(5,6,-2) and DB(6,10,-3).
+- the outputs of their runs, including DB(5,5,-2) and DB(5,6,-2) (Theorem 3.5) and DB(6,10,-3) (Theorem 1.2).
 
 With these programs we repeated all searches and enumerations of the paper: the counts for C3, ..., C10 and for C8
 with a pendant edge, Theorems 1.2, 3.1 and 3.5, Lemmas 3.2 and 3.4, the walks of Lemma 4.3 and the classes of their
